@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<script src="content.js"></script>
+<title>Hem Raj Pandeya</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Hem Raj Pandeya</h1>
+        </div>
+    </header>
+<nav id="navbar">
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
+    <button class="tablinks" onclick="openTab(event, 'Publication')">Publication</button>
+    <button class="tablinks" onclick="openTab(event, 'Project')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+  </div>
+</nav>    
+
+
+<div id="Home" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div class="container">
+    <div class="flex-container">
+      <div class="image">
+        <img class="my-image" src="images/hem.png"  alt="Hem">
+      </div>
+      <div class="myintro">
+        <p >I'm Hem Raj Pandeya, a dedicated mechanical engineer with a degree from Tribhuvan University, Pulchowk Campus. I've worked on the Eagle Ray drone for my capstone project, focusing on aerodynamics and efficiency to protect Snow Leopards from poaching.</H5> <br></H5> <br>
+
+I have extensive experience in drone technology, collecting real-time data from sensors and creating 3D maps based on environmental parameters. My expertise extends to CAD, simulations, machinery, tool utilization, and fabrication processes, which I've gained through my work at Prokura Innovations and the National Innovation Centre.</H5> <br></H5> <br>
+
+I'm particularly interested in control systems and enjoy building and flying RC planes in my free time. I'm also an avid reader, a hiking enthusiast, and passionate about cycling.
+
+          </p>
+          
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div id="CV" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+
+  <div class="pdf-container">
+    <p>
+     Click <a href="CV.pdf" target="_blank">here</a> if the page doesn't load.
+    </p>
+    <embed src="CV.pdf" width="90%" height="700px" /> 
+  </div>
+</div>
+
+
+<div id="Publication" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="Publications.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+
+<div id="Writing" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="writing.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+<div id="Project" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="project.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <!-- <span onclick="this.parentElement.style.display='none'" class="topright">&times</span> -->
+  <div w3-include-html="contactme.html"></div> 
+    <script>
+      includeHTML();
+    </script>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html> 
+
