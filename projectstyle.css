@@ -1,0 +1,107 @@
+/* projectstyle.css */
+
+body {
+  font-family: Arial;
+}
+
+.flex-p-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: calc(35% - 130px); /* Adjusted width for four items in a row */
+  margin: 15px; /* Reduced margin to decrease the gap between boxes */
+  padding: 20px;
+  border: 1px solid hsl(0, 2%, 67%);
+  background-color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project h1 {
+  text-align: center;
+  font-size: 23px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.description {
+  flex: 1;
+}
+
+a:link, a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
+
+.show-more-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+#project-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid hsl(0, 2%, 67%);
+  width: 60%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+
+.project-details {
+  margin-top: 10px;
+}

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .content {
+            max-width: 1400px; /* Adjust the max-width value as needed */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        ul {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .methodology-image {
+            display: block;
+            margin-top: 0px;
+            max-width: 70%;
+            height: 50%;
+            float: right;
+        }
+        .methodology-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .methodology-text {
+            flex: 1;
+            margin-right: 20px;
+            max-width: 60%;
+        }
+        .images-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    margin-bottom: 20px;
+}
+
+/* New style for individual images */
+.graph-image {
+    flex: 0 0 calc(33.33% - 10px); /* Control the width of each image with some spacing */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    margin-bottom: 10px; /* Add some space between images */
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <a href="index.html">
+            <button style="margin-top: 10px; margin-left: 0; padding-left: 10; padding-right: 10px; font-size: 14px;">Back</button>
+        </a>
+        
+        <h1>Optimization of Eagle Ray Blended Wing Body (BWB) UAV</h1>
+        <h2>Optimization Results: Isometric view</h2>
+        <img src="images/isometric.png" alt="Optimization Results: Isometric view" style="max-width: 70%; margin-bottom: 10px; padding: 0;">
+
+        <h2>Optimization Results: Orthographic view</h2>
+        <img src="images/orthographic.png" alt="Optimization Results: Orthographic view" style="max-width: 100%; margin-bottom: 20px;">
+       
+        <h2>Optimization Results: Graphs</h2>
+        <div class="images-container">
+            <div class="graph-image">
+                <img src="images/graph1.png" alt="Graph 1" class="graph-image">
+            </div>
+            <div class="graph-image">
+                <img src="images/graph2.png" alt="Graph 2" class="graph-image">
+            </div>
+            <div class="graph-image">
+                <img src="images/graph3.png" alt="Graph 3" class="graph-image">
+            </div>
+        </div>
+        
+         <!-- New heading and image -->
+<h2>Contour Plot at zero degree angle of attack in the optimized model</h2>
+<p> Pressure Contour on Whole Body<p></p>
+<img src="images/pressurecontouronbody.png" alt="Contour Plot at zero degree angle of attack in the optimized model" style="max-width: 100%; margin-bottom: 20px;">
+<p> Pressure Contour and velocity contour </p>
+<div class="images-container">
+    <div class="graph-image">
+        <img src="images/pressurecontour.png" alt="Graph 1" class="graph-image">
+    </div>
+    <div class="graph-image">
+        <img src="images/velocitycontour.png" alt="Graph 2" class="graph-image">
+    </div>
+</div>
+       
+<h2>Research Methodology</h2>
+<div class="methodology-section">
+    <div class="methodology-text">
+        <ul class="bullet-list">
+            <li>Low-fidelity aerodynamic analysis was performed using XFLR5 and OpenVSP.</li>
+            <li>Initially, gradient optimization was performed using SU2.</li>
+            <li>Then non-gradient optimization was performed using Aeolus.</li>
+            <li>High-fidelity aerodynamic analysis was done for the baseline and optimized model using ANSYS ICEM and Fluent.</li>
+            <li>Comparison was done between the baseline model and optimized model.</li>
+        </ul>
+    </div>
+    <img class="methodology-image" src="images/methodology.png" alt="Research Methodology Image">
+</div>
+
+<h2>Research Results</h2>
+<div class="bullet-list">
+    <ul class="bullet-list">
+        <li>Gradient-based optimization resulted in a 6% increment in lift/drag ratio.</li>
+        <li>Non-gradient optimization resulted in a 23% increment in lift/drag ratio.</li>
+        <li>Finally, some manual modifications were made based on literature, usability, and expert feedback which resulted in a 3% increment in lift/drag ratio.</li>
+    </ul>
+</div>
+</body>
+</html>
